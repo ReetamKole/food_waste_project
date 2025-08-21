@@ -6,7 +6,8 @@ from sqlalchemy import create_engine, text
 
 # --- DATABASE CONNECTION ---
 # ACTION: Replace 'your_password' with your actual PostgreSQL password.
-DATABASE_URI = "postgresql://postgres:][12nrmkole@localhost:5432/food_waste_db"
+
+DATABASE_URI = "sqlite:///food_waste.db"
 
 try:
     engine = create_engine(DATABASE_URI)
